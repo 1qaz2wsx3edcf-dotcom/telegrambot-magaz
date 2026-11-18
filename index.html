@@ -151,7 +151,7 @@ for (let i = 1; i < lines.length; i++) {
                 html += 
                     <div class="card">
                         <div>
-                            <img src="${p.image || ''}" alt="" onerror="this.src='https://via.placeholder.com/150?text=No+Photo'">
+                            <img src="${p.image || ''}" alt="">
                             <div class="card-title">${p.title}</div>
                             <div class="card-price">${p.price} ₽</div>
                         </div>
@@ -159,6 +159,7 @@ for (let i = 1; i < lines.length; i++) {
                     </div>
                 ;
             });
+
             html += '</div>';
             catalogEl.innerHTML = html;
         }
